@@ -28,26 +28,26 @@ function Projects() {
     },
     {
       src: portfolio,
-      link: "",
+      link: "https://monicamehta.vercel.app/",
       projectName: "My Portfolio",
       projectDesc:
         "My portfolio not only highlights my technical skills but also reflects my passion for creating impactful solutions.",
       techStack: ["react", "html5", "css3"],
-      githubLink: ""
+      githubLink: "https://github.com/Monicamehta12/Portfolio"
     },
     {
       src: cyglera,
-      link: "#",
+      link: "https://drive.google.com/drive/folders/1VcK8SvSxEJSJCAWA-Sf_AZQH2WDifCeL",
       projectName: "Cyglera Market",
       projectDesc:"A specialized Healthcare marketplace and a CRM system for corporate and individual employ.The platform ensures efficient transactions using stripejs and enhances corporate wellness initiatives.",
-      techStack: ["angular", "nodejs", "mongodb", "express"]
+      techStack: ["angular", "nodejs", "mongodb", "express"],
+      githubLink: "#"
     }
   ];
 
   return (
     <section id="projects" className={styles.container}>
       <h1 className={styles.title}>Projects</h1>
-      {/* <div className={styles.heading}></div> */}
       <div className={styles.projectContainer}>
         {projects.map((project, index) => (
           <ProjectCard

@@ -45,6 +45,7 @@
         text-transform: uppercase;
         cursor: pointer;
         text-decoration: underline;
+        color: var(--text-color);
     }
 }
 
