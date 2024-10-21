@@ -1,0 +1,97 @@
+.projectList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+    
+    h3{
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .imageContainer{
+        width: 300px;
+    }
+
+    .imageContainer img {
+        width: 100%; 
+        height: 100%; 
+        object-fit: contain;
+      }
+
+    .description{
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .techList{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .techIcons{
+        flex-basis: 20%;
+        list-style-type: none;
+
+        span{
+            font-size: 2rem;
+        }
+    }
+
+    .gitlink{
+        text-transform: uppercase;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+/* For the light theme */
+.light {
+    color: #fff;
+}
+
+.light:hover {
+    cursor: pointer;
+    color: #0987f2; /* Set appropriate hover color for light theme */
+}
+
+/* For the dark theme */
+.dark {
+    color: #000;
+}
+
+.dark:hover {
+    cursor: pointer;
+    color: var(--btn-color); /* Set a different hover color for dark theme */
+}
+
+@media (width >= 800px) {
+    .projectList{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 800px;
+        margin: 0;
+
+        .imageContainer{
+            width: 400px;
+            height: 400px;
+            padding-right: 20px;
+        }
+
+        .description{
+            width: 350px;
+            text-align: start;
+        }
+
+        .techList{
+            justify-content: start;
+        }
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    } 
+}

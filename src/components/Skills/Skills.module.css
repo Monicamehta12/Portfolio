@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+}
+
+.title{
+    width: 60px;
+    border-bottom: 5px solid var(--btn-color);
+}
+
+.skillsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skillsTitle {
+    flex-basis: 25%;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.skillsTitle span {
+    font-size: 3.5rem;
+}
+
+/* For the light theme */
+.light {
+    color: #fff;
+}
+
+.light:hover {
+    color: #0987f2; /* Set appropriate hover color for light theme */
+}
+
+/* For the dark theme */
+.dark {
+    color: #000;
+}
+
+.dark:hover {
+    color: var(--btn-color); /* Set a different hover color for dark theme */
+}
