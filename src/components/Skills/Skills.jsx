@@ -127,7 +127,7 @@ function Skills() {
           ) : (
             <span className={`devicon-postman-plain ${styles.light}`}></span>
           )}
-          <p>GITHUB</p>
+          <p>POSTMAN</p>
         </li>
       </ul>
     </section>
